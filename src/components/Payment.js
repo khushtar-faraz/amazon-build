@@ -105,6 +105,7 @@ function Payment() {
                 price={item.price}
                 image={item.image}
                 key={item.id}
+                quantity={item.quantity}
               />
             ))}
           </div>

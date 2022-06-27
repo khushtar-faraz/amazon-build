@@ -56,17 +56,23 @@ function CheckoutProduct({
             ))}
         </div>
         <div className="checkoutProduct__controlButtons">
-          <button
-            onClick={removeButtonClickHandler}
-            style={{ cursor: "pointer" }}
-          >
-            -
-          </button>
+          {!hidebutton && (
+            <button
+              onClick={removeButtonClickHandler}
+              style={{ cursor: "pointer" }}
+            >
+              -
+            </button>
+          )}
 
+          {hidebutton && "Quantity: "}
           <button>{quantity}</button>
-          <button onClick={addToBasket} style={{ cursor: "pointer" }}>
-            +
-          </button>
+
+          {!hidebutton && (
+            <button onClick={addToBasket} style={{ cursor: "pointer" }}>
+              +
+            </button>
+          )}
         </div>
         {!hidebutton && (
           <button onClick={filterProductFromBasketHandler}>

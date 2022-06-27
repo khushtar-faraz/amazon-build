@@ -19,6 +19,7 @@ function Order({ order }) {
           price={item.price}
           image={item.image}
           key={item.id}
+          quantity={item.quantity}
           hidebutton
         />
       ))}
