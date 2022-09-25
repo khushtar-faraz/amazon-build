@@ -1,70 +1,45 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About the application
 
-## Available Scripts
+An E commerce web app with all the core features like product listing, checkout, basket, address input, orders page, signup and signin and payment processing via stripe
 
-In the project directory, you can run:
 
-### `npm start`
+## Technology used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+HTML, CSS, Javascript, React JS, Context API, Firebase functions, Firestore Database, Stripe API
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## How to use the Application
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+First go to the live hosted URL https://clone-c64da.web.app/
 
-### `npm run build`
+It will show the below screen.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![amazon repo](https://user-images.githubusercontent.com/91658563/192159631-aee135f3-116b-4fa5-9a64-cbc58a69e6d5.jpg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Click on Sign In. Below screen will appear.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screenshot 2022-09-26 000734](https://user-images.githubusercontent.com/91658563/192159746-7df90d81-2ea7-4e95-b7e6-64d27e057044.jpg)
 
-### `npm run eject`
+Enter desired email and password and click on Create Your Amazon Account button.
+You will be redirected back to home screen and your email address will appear in place of Guest.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![amazon](https://user-images.githubusercontent.com/91658563/192159856-73e251bf-4bf0-4ae1-b681-00fcc5799bd8.jpg)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Now click on Add to Basket button on products you want to purchase and then click on the basket icon to checkout. You will see the list of products you have added and total price as well.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Screenshot 2022-09-25 232044](https://user-images.githubusercontent.com/91658563/192159930-bc7c433d-ce0f-473a-8535-556700580ac6.jpg)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Now click on proceed to checkout button.
 
-## Learn More
+![Screenshot 2022-09-25 232210](https://user-images.githubusercontent.com/91658563/192159996-2c57ee5f-1952-4288-8606-081bb4e19e02.jpg)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Enter your address and other details and click on Use this address button. You will be directed to payment page where you can see your address, product summary and stripe card element to initiate payment. Enter 4242424242 in repeated manner and click on buy now button. Note this is stripe test card to test payment.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Screenshot 2022-09-25 232327](https://user-images.githubusercontent.com/91658563/192160099-d656f445-2c0f-4da3-956f-1a99f708758d.jpg)
 
-### Code Splitting
+After successful payment, you will be directed to orders page where you can see your purchased item.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Screenshot 2022-09-25 232403](https://user-images.githubusercontent.com/91658563/192160162-4b2229d7-6dc7-4e49-9186-31fb5063dcb2.jpg)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
