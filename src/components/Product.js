@@ -1,21 +1,30 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
+import { toast } from "react-toastify";
 import { useStatevalue } from "../context/react-context";
 import "./Product.css";
 function Product({ id, title, rating, price, image }) {
-  const [{ basket }, dispatch] = useStatevalue();
+  const [{ user, basket }, dispatch] = useStatevalue();
+  const history = useHistory();
+
   console.log("This is the basket>>>", basket);
   const addToBasket = () => {
-    dispatch({
-      type: "ADD_TO_BASKET",
-      item: {
-        id,
-        title,
-        rating,
-        price,
-        image,
-        quantity:1,
-      },
-    });
+    if (user) {
+      dispatch({
+        type: "ADD_TO_BASKET",
+        item: {
+          id,
+          title,
+          rating,
+          price,
+          image,
+          quantity: 1,
+        },
+      });
+      toast.success("Added to basket");
+    } else {
+      history.push("/login");
+    }
   };
   return (
     <div className="product">

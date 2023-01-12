@@ -12,6 +12,8 @@ const app = express();
 // -Middlewares
 app.use(cors({origin: "*"}));
 app.use(express.json());
+app.use(express.static("public"));
+
 
 // -API Routes
 app.get("/", (request, response) => response.status(200).send("hello world"));

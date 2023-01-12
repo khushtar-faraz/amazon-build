@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-toastify";
 import { useStatevalue } from "../context/react-context";
 import "./CheckoutProduct.css";
 
@@ -18,6 +19,7 @@ function CheckoutProduct({
       type: "REMOVE_FROM_BASKET",
       id: id,
     });
+    
   };
 
   const addToBasket = () => {
@@ -36,6 +38,7 @@ function CheckoutProduct({
 
   const filterProductFromBasketHandler = () => {
     dispatch({ type: "FILTER_FROM_BASKET", id: id });
+    toast.success("Removed from basket");
   };
   return (
     <div className="checkoutProduct">
@@ -75,7 +78,10 @@ function CheckoutProduct({
           )}
         </div>
         {!hidebutton && (
-          <button onClick={filterProductFromBasketHandler}>
+          <button
+            id="checkoutProduct__removeButton"
+            onClick={filterProductFromBasketHandler}
+          >
             Remove from basket
           </button>
         )}

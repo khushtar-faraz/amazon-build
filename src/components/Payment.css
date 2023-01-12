@@ -50,3 +50,11 @@
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
 }
+
+.payment__priceContainer {
+  margin-top: 15px;
+}
+
+.payment__priceContainer > h6 {
+  margin-top: 1px;
+}

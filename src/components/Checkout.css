@@ -14,3 +14,10 @@
     padding: 10px;
     border-bottom: 1px solid lightgray;
 }
+
+.checkout__empty{
+  margin: 30px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

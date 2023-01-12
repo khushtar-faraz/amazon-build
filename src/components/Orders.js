@@ -30,9 +30,19 @@ function Orders() {
     <div className="orders">
       <h1>Your Orders</h1>
       <div className="orders__order">
-        {orders?.map((order) => (
-          <Order order={order} />
-        ))}
+        {orders.length > 0 ? (
+          orders?.map((order) => <Order order={order} />)
+        ) : (
+          <h2
+            style={{
+              marginTop: "20%",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            No orders to display!
+          </h2>
+        )}
       </div>
     </div>
   );

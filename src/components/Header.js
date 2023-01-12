@@ -1,11 +1,12 @@
 import React from "react";
 import "./Header.css";
-import SearchIcon from "@mui/icons-material/Search";
+// import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Link } from "react-router-dom";
 import { useStatevalue } from "../context/react-context";
 import { auth } from "../firebase";
 import { useHistory } from "react-router-dom";
+import { toast } from "react-toastify";
 
 function Header() {
   const [{ basket, user }] = useStatevalue();
@@ -14,6 +15,7 @@ function Header() {
   const profileClickHandler = () => {
     if (user) {
       auth.signOut();
+      toast.success("Logged out");
       history.push("/");
     }
   };
@@ -33,8 +35,8 @@ function Header() {
       </Link>
 
       <div className="header__search">
-        <input type="text" className="header__searchInput" />
-        <SearchIcon className="header__searchIcon" />
+        {/* <input type="text" className="header__searchInput" />
+        <SearchIcon className="header__searchIcon" /> */}
       </div>
       <div className="header__nav">
         <div className="header__option">
@@ -56,10 +58,10 @@ function Header() {
             <span className="header__optionLineTwo">& Orders</span>
           </div>
         </Link>
-        <div className="header__option">
+        {/* <div className="header__option">
           <span className="header__optionLineOne">Your</span>
           <span className="header__optionLineTwo">Prime</span>
-        </div>
+        </div> */}
         <Link to="/checkout">
           <div className="header__optionBasket">
             <ShoppingCartIcon />

@@ -126,6 +126,8 @@ function Payment() {
                   thousandSeparator={true}
                   prefix={"$"}
                 />
+
+                <h6>Use 4242 in repetition as card number, MM/YY and CVC</h6>
                 <button disabled={disabled || processing || succeeded}>
                   <span>{processing ? <p>processing...</p> : "Buy Now"}</span>
                 </button>

@@ -82,8 +82,13 @@ span {
   cursor: pointer;
 }
 
-.address__container{
+.address__container {
   display: flex;
   align-items: center;
-  justify-content:flex-start
+  justify-content: flex-start;
+}
+
+.disabled__button {
+  cursor: not-allowed !important;
+  opacity: 0.5;
 }

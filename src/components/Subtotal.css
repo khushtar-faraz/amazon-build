@@ -40,6 +40,6 @@
   height: 30px;
   margin-top: 10px;
   color: #111;
-  cursor: pointer;
+  cursor: not-allowed !important;
   opacity: 0.5;
 }
